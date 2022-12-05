@@ -21,6 +21,7 @@
   <sca:property xmi:id="_mpId4HR7Ee2nXI6uEhcgQw" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
   <sca:property xmi:id="_mpWgUHR7Ee2nXI6uEhcgQw" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
   <sca:property xmi:id="_mpbY0HR7Ee2nXI6uEhcgQw" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_my914HSoEe2hobaOIWtUgQ" name="userId" type="XMLSchema:string" publicAccess="true" scalable="true"/>
   <sca:component xmi:id="_mSytAG9CEe2_utWEr7FFNQ" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
     <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_mSytAW9CEe2_utWEr7FFNQ" processName="customeronboarding.Process"/>
     <sca:service xmi:id="_nt_fsG9CEe2_utWEr7FFNQ" name="customer">

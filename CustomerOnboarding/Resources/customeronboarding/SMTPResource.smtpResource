@@ -3,6 +3,8 @@
   <jndi:reference xmi:id="_D7zcAG_BEe2nWd5GPabN1A" key="identityJNDIName" type="subject:SubjectConfiguration" value=""/>
   <jndi:configuration xsi:type="smtp:SmtpConfiguration" xmi:id="_D7zcAW_BEe2nWd5GPabN1A">
     <tcpDetails xmi:id="_D79NAG_BEe2nWd5GPabN1A" host="smtp.sendgrid.net" port="25" connectionTimeout="60000"/>
-    <userCredentials xmi:id="_D79NAW_BEe2nWd5GPabN1A" username="apikey" password="#!dW1bbWuysh/0h8ltEhxq/DwyUWjXICDAoWLWo2ESz/NhKA9D/7Bo4KE2rMzg00RApzc+1Ilm4XeLIfP/ByY3EE1KsHWYc576TqlryycmRHFRRExVwuWfNy2gll1FxuHJwYRCM5Cy8MgQLmaL6nfddko8D8qsYx79xZqqdNYbC9UFWR0v5AbhVJBBhZ9qxWEI2Ni8Lc5oI1E="/>
+    <userCredentials xmi:id="_D79NAW_BEe2nWd5GPabN1A" password="#!dW1bbWuysh/0h8ltEhxq/DwyUWjXICDAoWLWo2ESz/NhKA9D/7Bo4KE2rMzg00RApzc+1Ilm4XeLIfP/ByY3EE1KsHWYc576TqlryycmRHFRRExVwuWfNy2gll1FxuHJwYRCM5Cy8MgQLmaL6nfddko8D8qsYx79xZqqdNYbC9UFWR0v5AbhVJBBhZ9qxWEI2Ni8Lc5oI1E=">
+      <substitutionBindings xmi:id="_l_KaYHSoEe2hobaOIWtUgQ" template="username" propName="userId"/>
+    </userCredentials>
   </jndi:configuration>
 </jndi:namedResource>
