@@ -8,24 +8,11 @@
     xmlns:ns0="/T1669656744078Converted/JsonSchema"
     xmlns:ns1="http://tns.tibco.com/bw/activity/sendmail/xsd/input+43e55661-7a8a-4603-8f05-6fa46d4ce6a9+input"
     xmlns:ns2="http://tns.tibco.com/bw/palette/internal/activityerror+bw.mail.send"
+    xmlns:ns3="http://www.tibco.com/pe/WriteToLogActivitySchema"
     xmlns:sca="http://docs.oasis-open.org/ns/opencsa/sca/200912"
     xmlns:sca-bpel="http://docs.oasis-open.org/ns/opencsa/sca-bpel/200801"
     xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"
     xmlns:tibprop="http://ns.tibco.com/bw/property" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <tibex:VariableDescriptor type="MemorySaving">
-        <task name="SendMail">
-            <endingVariables>
-                <variable>SendMail-input</variable>
-                <variable>Start</variable>
-            </endingVariables>
-        </task>
-        <task name="Mapper">
-            <endingVariables>
-                <variable>Mapper-input</variable>
-                <variable>Mapper</variable>
-            </endingVariables>
-        </task>
-    </tibex:VariableDescriptor>
     <tibex:Types>
         <xs:schema attributeFormDefault="unqualified"
             elementFormDefault="qualified"
@@ -314,6 +301,23 @@
                 </choice>
             </complexType>
         </schema>
+        <xs:schema attributeFormDefault="unqualified"
+            elementFormDefault="qualified"
+            targetNamespace="http://www.tibco.com/pe/WriteToLogActivitySchema"
+            xmlns:tns="http://www.tibco.com/pe/WriteToLogActivitySchema" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+            <xs:complexType name="LogParametersType">
+                <xs:sequence>
+                    <xs:element form="unqualified" minOccurs="0"
+                        name="msgCode" type="xs:string"/>
+                    <xs:element form="unqualified" minOccurs="0"
+                        name="loggerName" type="xs:string"/>
+                    <xs:element form="unqualified" minOccurs="0"
+                        name="logLevel" type="xs:string"/>
+                    <xs:element form="unqualified" name="message" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:element name="ActivityInput" type="tns:LogParametersType"/>
+        </xs:schema>
     </tibex:Types>
     <tibex:ProcessInfo callable="true" createdBy="Administrator"
         createdOn="Mon Dec 05 20:19:35 IST 2022" description=""
@@ -485,6 +489,41 @@
                                     <layoutConstraint x="56"
                                     xsi:type="notation:Bounds" y="100"/>
                                     </children>
+                                    <children type="4002">
+                                    <children type="4017">
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+                                    <children type="4017">
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+                                    <children type="4017">
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+                                    <children type="4017">
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+                                    <styles fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <styles
+                                    backgroundColor="16777215"
+                                    gradientEndColor="50431"
+                                    gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
+                                    <element href="//0/@process/@activity/@activity/@activities.4"/>
+                                    <layoutConstraint x="217"
+                                    xsi:type="notation:Bounds" y="228"/>
+                                    </children>
                                     <styles xsi:type="notation:DrawerStyle"/>
                                     <styles xsi:type="notation:SortingStyle"/>
                                     <styles xsi:type="notation:FilteringStyle"/>
@@ -563,12 +602,27 @@
             <element href="//0/@process/@activity/@activity/@links/@children.2"/>
             <bendpoints points="[25, -16, -99, 64]$[100, -64, -24, 16]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
+        <edges
+            source="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2"
+            target="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.4" type="4006">
+            <children type="6002">
+                <layoutConstraint xsi:type="notation:Location" y="40"/>
+            </children>
+            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
+            <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
+            <element href="//0/@process/@activity/@activity/@links/@children.3"/>
+            <bendpoints points="[0, 0, 0, 0]$[0, 0, 0, 0]" xsi:type="notation:RelativeBendpoints"/>
+        </edges>
     </notation:Diagram>
     <tibex:NamespaceRegistry enabled="true">
         <tibex:namespaceItem
             namespace="http://tns.tibco.com/bw/activity/sendmail/xsd/input+43e55661-7a8a-4603-8f05-6fa46d4ce6a9+input" prefix="tns"/>
         <tibex:namespaceItem
             namespace="/T1669656744078Converted/JsonSchema" prefix="tns1"/>
+        <tibex:namespaceItem
+            namespace="http://www.tibco.com/pe/WriteToLogActivitySchema" prefix="tns2"/>
+        <tibex:namespaceItem
+            namespace="http://www.w3.org/2001/XMLSchema" prefix="xsd"/>
     </tibex:NamespaceRegistry>
     <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="/T1669656744078Converted/JsonSchema"/>
     <bpws:variables>
@@ -591,6 +645,7 @@
         <bpws:variable element="ns0:CustomerRequestSchema"
             name="Mapper-input" sca-bpel:internal="true"/>
         <bpws:variable element="ns0:CustomerRequestSchema" name="Mapper" sca-bpel:internal="true"/>
+        <bpws:variable element="ns3:ActivityInput" name="Log-input" sca-bpel:internal="true"/>
     </bpws:variables>
     <bpws:extensions>
         <bpws:extension mustUnderstand="no" namespace="http://www.eclipse.org/gmf/runtime/1.0.2/notation"/>
@@ -606,6 +661,7 @@
                 <bpws:link name="SendMailToEnd" tibex:linkType="SUCCESS"/>
                 <bpws:link name="StartToMapper" tibex:linkType="SUCCESS"/>
                 <bpws:link name="MapperToSendMail" tibex:linkType="SUCCESS"/>
+                <bpws:link name="SendMailToLog" tibex:linkType="SUCCESS"/>
             </bpws:links>
             <bpws:extensionActivity>
                 <tibex:receiveEvent createInstance="yes"
@@ -651,6 +707,7 @@
                     </bpws:targets>
                     <bpws:sources>
                         <bpws:source linkName="SendMailToEnd"/>
+                        <bpws:source linkName="SendMailToLog"/>
                     </bpws:sources>
                     <tibex:inputBindings>
                         <tibex:inputBinding
@@ -687,7 +744,7 @@
                     </bpws:sources>
                     <tibex:inputBindings>
                         <tibex:inputBinding
-                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns1=&quot;/T1669656744078Converted/JsonSchema&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;Start&quot;/>&lt;xsl:template name=&quot;Mapper-input&quot; match=&quot;/&quot;>&lt;tns1:CustomerRequestSchema>&lt;xsl:if test=&quot;$Start/tns1:FirstName&quot;>&lt;tns1:FirstName>&lt;xsl:value-of select=&quot;$Start/tns1:FirstName&quot;/>&lt;/tns1:FirstName>&lt;/xsl:if>&lt;xsl:if test=&quot;$Start/tns1:LastName&quot;>&lt;tns1:LastName>&lt;xsl:value-of select=&quot;$Start/tns1:LastName&quot;/>&lt;/tns1:LastName>&lt;/xsl:if>&lt;xsl:if test=&quot;$Start/tns1:Email&quot;>&lt;tns1:Email>&lt;xsl:value-of select=&quot;$Start/tns1:Email&quot;/>&lt;/tns1:Email>&lt;/xsl:if>&lt;xsl:if test=&quot;$Start/tns1:Contact&quot;>&lt;tns1:Contact>&lt;xsl:value-of select=&quot;$Start/tns1:Contact&quot;/>&lt;/tns1:Contact>&lt;/xsl:if>&lt;/tns1:CustomerRequestSchema>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns1=&quot;/T1669656744078Converted/JsonSchema&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;Start&quot;/>&lt;xsl:template name=&quot;Mapper-input&quot; match=&quot;/&quot;>&lt;tns1:CustomerRequestSchema>&lt;xsl:if test=&quot;$Start/tns1:FirstName&quot;>&lt;tns1:FirstName>&lt;xsl:value-of select=&quot;$Start/tns1:FirstName&quot;/>&lt;/tns1:FirstName>&lt;/xsl:if>&lt;xsl:if test=&quot;$Start/tns1:LastName&quot;>&lt;tns1:LastName>&lt;xsl:value-of select=&quot;$Start/tns1:LastName&quot;/>&lt;/tns1:LastName>&lt;/xsl:if>&lt;xsl:if test=&quot;$Start/tns1:Email&quot;>&lt;tns1:Email>&lt;xsl:value-of select=&quot;$Start/tns1:Email&quot;/>&lt;/tns1:Email>&lt;/xsl:if>&lt;tns1:Contact>&lt;xsl:value-of select=&quot;xsd:int($Start/tns1:Contact)&quot;/>&lt;/tns1:Contact>&lt;/tns1:CustomerRequestSchema>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                     </tibex:inputBindings>
                     <tibex:config>
                         <bwext:BWActivity
@@ -702,6 +759,35 @@
                                     <type href="http://ns.tibco.com/bw/palette/generalactivities#//Mapper"/>
                                     <value
                                     inputQName="JsonSchema:CustomerRequestSchema" xsi:type="generalactivities:Mapper"/>
+                                </properties>
+                            </activityConfig>
+                        </bwext:BWActivity>
+                    </tibex:config>
+                </tibex:activityExtension>
+            </bpws:extensionActivity>
+            <bpws:extensionActivity>
+                <tibex:activityExtension inputVariable="Log-input"
+                    name="Log"
+                    tibex:xpdlId="6a4800e2-bb0d-4085-8689-6b06ee60f4bf" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                    <bpws:targets>
+                        <bpws:target linkName="SendMailToLog"/>
+                    </bpws:targets>
+                    <tibex:inputBindings>
+                        <tibex:inputBinding
+                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns2=&quot;http://www.tibco.com/pe/WriteToLogActivitySchema&quot; version=&quot;2.0&quot;>&lt;xsl:template name=&quot;Log-input&quot; match=&quot;/&quot;>&lt;tns2:ActivityInput>&lt;message>&lt;xsl:value-of select=&quot;&amp;quot;Email Sent to user &amp;quot;&quot;/>&lt;/message>&lt;/tns2:ActivityInput>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                    </tibex:inputBindings>
+                    <tibex:config>
+                        <bwext:BWActivity
+                            activityTypeID="bw.generalactivities.log"
+                            version="6.0.0.001"
+                            xmlns:activityconfig="http://tns.tibco.com/bw/model/activityconfig"
+                            xmlns:bwext="http://tns.tibco.com/bw/model/core/bwext"
+                            xmlns:generalactivities="http://ns.tibco.com/bw/palette/generalactivities" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                            <activityConfig>
+                                <properties name="config" xsi:type="activityconfig:EMFProperty">
+                                    <type href="http://ns.tibco.com/bw/palette/generalactivities#//Log"/>
+                                    <value role="Info"
+                                    suppressJobInfo="true" xsi:type="generalactivities:Log"/>
                                 </properties>
                             </activityConfig>
                         </bwext:BWActivity>

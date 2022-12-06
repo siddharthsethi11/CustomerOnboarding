@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: CustomerOnboarding application
 Bundle-SymbolicName: CustomerOnboarding.application
-Bundle-Version: 1.0.0.qualifier
+Bundle-Version: 1.0.1.qualifier
 Bundle-Vendor: TIBCO Software Inc.
 TIBCO-BW-Version: 2.7.3 V44 2022-09-16
 TIBCO-BW-Edition: bwcloud

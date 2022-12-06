@@ -13,22 +13,22 @@
         <informations Name="input" nameSpace="/T1669656744078Converted/JsonSchema">
           <nameSpaces prefix="tns" nameSapce="/T1669656744078Converted/JsonSchema"/>
           <Parameter Name="tns:CustomerRequestSchema">
-            <parameters Name="tns:FirstName" Value="&quot;John&quot;" type="string" nameSpace="/T1669656744078Converted/JsonSchema" canDelete="true">
+            <parameters Name="tns:FirstName" Value="John" type="string" nameSpace="/T1669656744078Converted/JsonSchema" canDelete="true">
               <parent Name="CustomerRequestSchema" nameSpace="/T1669656744078Converted/JsonSchema"/>
             </parameters>
-            <parameters Name="tns:LastName" Value="&quot;Doe&quot;" type="string" nameSpace="/T1669656744078Converted/JsonSchema" canDelete="true">
+            <parameters Name="tns:LastName" Value="Doe" type="string" nameSpace="/T1669656744078Converted/JsonSchema" canDelete="true">
               <parent Name="CustomerRequestSchema" nameSpace="/T1669656744078Converted/JsonSchema"/>
             </parameters>
-            <parameters Name="tns:Email" Value="&quot;sethisiddharth504@gmail.com&quot;" type="string" nameSpace="/T1669656744078Converted/JsonSchema" canDelete="true">
+            <parameters Name="tns:Email" Value="sethisiddharth504@gmail.com" type="string" nameSpace="/T1669656744078Converted/JsonSchema" canDelete="true">
               <parent Name="CustomerRequestSchema" nameSpace="/T1669656744078Converted/JsonSchema"/>
             </parameters>
-            <parameters Name="tns:Contact" Value="&quot;9812345678&quot;" type="string" nameSpace="/T1669656744078Converted/JsonSchema" canDelete="true">
+            <parameters Name="tns:Contact" Value="9811713817" type="string" nameSpace="/T1669656744078Converted/JsonSchema" canDelete="true">
               <parent Name="CustomerRequestSchema" nameSpace="/T1669656744078Converted/JsonSchema"/>
             </parameters>
           </Parameter>
         </informations>
       </Inputs>
-      <resolvedInput inputValue="&lt;tns:CustomerRequestSchema xmlns:tns='/T1669656744078Converted/JsonSchema' >&lt;tns:FirstName>&quot;John&quot;&lt;/tns:FirstName>&lt;tns:LastName>&quot;Doe&quot;&lt;/tns:LastName>&lt;tns:Email>&quot;sethisiddharth504@gmail.com&quot;&lt;/tns:Email>&lt;tns:Contact>&quot;9812345678&quot;&lt;/tns:Contact>&lt;/tns:CustomerRequestSchema>"/>
+      <resolvedInput inputValue="&lt;tns:CustomerRequestSchema xmlns:tns='/T1669656744078Converted/JsonSchema' >&lt;tns:FirstName>John&lt;/tns:FirstName>&lt;tns:LastName>Doe&lt;/tns:LastName>&lt;tns:Email>sethisiddharth504@gmail.com&lt;/tns:Email>&lt;tns:Contact>9811713817&lt;/tns:Contact>&lt;/tns:CustomerRequestSchema>"/>
     </Operation>
   </ProcessNode>
 </emulation:EmulationData>

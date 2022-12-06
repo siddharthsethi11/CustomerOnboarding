@@ -708,11 +708,15 @@
 
                                     <styles xsi:type="bwnotation:BackgroundStyle"/>
 
-                                    <styles xsi:type="bwnotation:ResizingStyle"/>
+                                    <styles
+                                    restoreHeight="178"
+                                    restoreWidth="354" xsi:type="bwnotation:ResizingStyle"/>
 
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@faultHandlers/@catchAll"/>
 
-                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    <layoutConstraint
+                                    height="178"
+                                    width="354" xsi:type="notation:Bounds"/>
                                     </children>
 
                                     <styles xsi:type="notation:SortingStyle"/>
@@ -732,7 +736,9 @@
 
                                     <layoutConstraint
                                     height="200"
-                                    width="329" xsi:type="notation:Bounds"/>
+                                    width="364"
+                                    x="21"
+                                    xsi:type="notation:Bounds" y="226"/>
                                     </children>
                                     <styles xsi:type="notation:SortingStyle"/>
                                     <styles xsi:type="notation:FilteringStyle"/>
@@ -840,7 +846,7 @@
                             <styles xsi:type="bwnotation:BackgroundStyle"/>
                             <styles xsi:type="bwnotation:ResizingStyle"/>
                             <element href="//0/@process/@activity"/>
-                            <layoutConstraint height="486" width="518" xsi:type="notation:Bounds"/>
+                            <layoutConstraint height="490" width="518" xsi:type="notation:Bounds"/>
                         </children>
                         <styles xsi:type="notation:SortingStyle"/>
                         <styles xsi:type="notation:FilteringStyle"/>
@@ -850,7 +856,7 @@
                     <styles xsi:type="bwnotation:BackgroundStyle"/>
                     <styles xsi:type="bwnotation:ResizingStyle"/>
                     <element href="//0/@process/@activity"/>
-                    <layoutConstraint height="510" width="518" x="1"
+                    <layoutConstraint height="514" width="518" x="1"
                         xsi:type="notation:Bounds" y="1"/>
                 </children>
                 <styles xsi:type="notation:SortingStyle"/>
@@ -859,7 +865,7 @@
             </children>
             <styles fontName="Segoe UI" lineColor="0" xsi:type="notation:ShapeStyle"/>
             <element href="//0/@process"/>
-            <layoutConstraint height="562" width="860" xsi:type="notation:Bounds"/>
+            <layoutConstraint height="566" width="860" xsi:type="notation:Bounds"/>
         </children>
         <styles xsi:type="notation:DiagramStyle"/>
         <element href="//0"/>
